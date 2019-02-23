@@ -1,5 +1,5 @@
 # Go Chase It Project  
-This is the 2nd project in the Udacity Nanodegree Course: Robotics Software Engineering.  
+This is the 2nd project in the Robotics Software Engineer Nanodegree Program by Udacity.
   
 ## Project Description  
 In this project, I created two ROS packages inside my `catkin_ws/src`:  

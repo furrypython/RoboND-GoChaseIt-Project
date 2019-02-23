@@ -14,8 +14,9 @@ contains two C++ ROS nodes (`drive_bot` & `process_image`) to interact with the 
     reads my robot’s camera image, analyzes it to determine the presence and position of a white ball.  
     If a white ball exists in the image, my node requests a service via a client to drive the robot towards it.
  
-
 ## References  
-1. [Inertia matrix calculation](http://answers.gazebosim.org/question/4372/the-inertia-matrix-explained/)
+1. [The inertia matrix explained](http://answers.gazebosim.org/question/4372/the-inertia-matrix-explained/): GAZEBO ANSWERS  
+2. [[ROS Projects] – Exploring ROS using a 2 Wheeled Robot](http://www.theconstructsim.com/ros-projects-exploring-ros-using-2-wheeled-robot-part-1/): The Construct  
+3. [移動型ロボットのURDF作成](https://gbiggs.github.io/rosjp_urdf_tutorial_text/mobile_robot_urdf.html): ロボットモデリング講習会
 
   

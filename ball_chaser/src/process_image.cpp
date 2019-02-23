@@ -48,24 +48,24 @@ void process_image_callback(const sensor_msgs::Image img)
             }
 	}
     }
-	
+		
     // Then, identify if this pixel falls in the left, mid, or right side of the image
     vector<int> position_counter{left_counter, front_counter, right_counter};
     int where_to_move = *max_element(position_counter.begin(), position_counter.end());
-	
-    // Depending on the white ball position, call the drive_bot function and pass velocities to it
-    if (where_to_move == left_counter) {
-	drive_robot(0.0, 0.5); // This request drives my_chaser left
-    }
-    if (where_to_move == front_counter) {
-        drive_robot(0.5, 0.0);  // This request drives my_chaser robot forward
-    }
-    if (where_to_move == right_counter) {
-        drive_robot(0.0, -0.5);  // This request should drive your robot right
-    }
-    // Request a stop when there's no white ball seen by the camera
+
+    // Depending on the white ball position, call the drive_bot function and pass velocities to it.
+    // Request a stop when there's no white ball seen by the camera.
     if (where_to_move == 0){
-        drive_robot(0.0, 0.0); // This request brings my_chaser to a complete stop
+        drive_robot(0.0, 0.0); // This request brings my_robot to a complete stop
+    }
+    else if (where_to_move == left_counter) {
+	drive_robot(0.0, -0.5);  // This request should drive my_robot left
+    }
+    else if (where_to_move == front_counter) {
+        drive_robot(0.5, 0.0);  // This request drives my_robot robot forward
+    }
+    else if (where_to_move == right_counter) {
+        drive_robot(0.0, 0.5); // This request drives my_robot right
     }
 }
 

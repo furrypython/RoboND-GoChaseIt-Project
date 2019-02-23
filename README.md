@@ -15,7 +15,6 @@ contains two C++ ROS nodes (`drive_bot` & `process_image`) to interact with the 
     If a white ball exists in the image, my node requests a service via a client to drive the robot towards it.  
     
 ## Directory Structure  
-### Directory Structure
 ```
     .GoChaseIt                         # Go Chase It Project
     ├── my_robot                       # my_robot package                   

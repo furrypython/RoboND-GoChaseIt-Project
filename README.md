@@ -3,7 +3,7 @@ This is the 2nd project in the Udacity Nanodegree Course: Robotics Software Engi
   
 ## Project Description  
 In this project, I created two ROS packages inside my `catkin_ws/src`:  
-1. `my_chaser`:  
+1. `my_robot`:  
 holds a robot designed with the Unified Robot Description Format, a white-colored ball, and a gazebo world.  
 2. `ball_chaser`:  
 contains two C++ ROS nodes (`drive_bot` & `process_image`) to interact with the robot and make it chase the white ball.  

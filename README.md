@@ -12,7 +12,23 @@ contains two C++ ROS nodes (`drive_bot` & `process_image`) to interact with the 
     The service publishes to the wheel joints and return back the requested velocities.  
     - `process_image`  
     reads my robot’s camera image, analyzes it to determine the presence and position of a white ball.  
-    If a white ball exists in the image, my node requests a service via a client to drive the robot towards it.
+    If a white ball exists in the image, my node requests a service via a client to drive the robot towards it.  
+ 
+## Step to test `process_image`
+### Step 1 Launch the robot inside the world 
+```sh
+$ cd (your workspace)/catkin_ws/  
+$ source devel/setup.bash  
+$ roslaunch my_robot world.launch
+```
+### Step 2 Run `drive_bot` and `process_image.cpp`  
+```sh
+$ cd (your workspace)/catkin_ws/  
+$ source devel/setup.bash  
+$ roslaunch ball_chaser ball_chaser.launch
+```
+Now place the white ball at different positions in front of the robot and see if the robot is capable of chasing the ball.
+
  
 ## References  
 1. [The inertia matrix explained](http://answers.gazebosim.org/question/4372/the-inertia-matrix-explained/): GAZEBO ANSWERS  

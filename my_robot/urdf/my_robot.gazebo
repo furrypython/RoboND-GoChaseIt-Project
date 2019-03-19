@@ -8,7 +8,7 @@
       <updateRate>10</updateRate>
       <leftJoint>left_wheel_hinge</leftJoint>
       <rightJoint>right_wheel_hinge</rightJoint>
-      <wheelSeparation>0.4</wheelSeparation>
+      <wheelSeparation>0.35</wheelSeparation>
       <wheelDiameter>0.2</wheelDiameter>
       <torque>10</torque>
       <commandTopic>cmd_vel</commandTopic>
@@ -90,7 +90,7 @@
         </noise>
       </ray>
       <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
-        <topicName>/scan</topicName>
+        <topicName>/my_robot/laser/scan</topicName>
         <frameName>hokuyo</frameName>
       </plugin>
     </sensor>

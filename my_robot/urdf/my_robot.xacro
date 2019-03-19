@@ -57,8 +57,8 @@
     </visual>
   </link>
   
-  <!--Link (right_wheel)-->  
-  <link name='right_wheel'>    
+  <!--Link (left_wheel)-->  
+  <link name='left_wheel'>    
     <inertial>
       <mass value="5"/>
       <origin xyz="0 0 0" rpy="0 1.5707 1.5707" />
@@ -69,15 +69,15 @@
       />
     </inertial>
     
-    <collision name='right_wheel_collision'>
-      <origin rpy="0 1.5707 1.5707" xyz="0 0 0" />
+    <collision name='left_wheel_collision'>
+      <origin  xyz="0 0 0" rpy="0 1.5707 1.5707"/>
       <geometry>
         <cylinder length="0.05" radius="0.1"/>
       </geometry>
     </collision>
     
-    <visual name='right_wheel_visual'>
-      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+    <visual name='left_wheel_visual'>
+      <origin xyz="0 0 0" rpy="0 1.5707 1.5707"/>
       <geometry>
         <cylinder length="0.05" radius="0.1"/>
       </geometry>  
@@ -85,18 +85,18 @@
     
   </link>
     
-  <!--Joint (right_wheel_hinge)-->
-  <joint name="right_wheel_hinge" type="continuous">
+  <!--Joint (left_wheel_hinge)-->
+  <joint name="left_wheel_hinge" type="continuous">
     <origin xyz="-0.05 0.15 0" rpy="0 0 0"/>
-    <child link="right_wheel" />
+    <child link="left_wheel" />
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0" />
     <limit effort="10000" velocity="1000"/>
     <joint_properties damping="1.0" friction="1.0" />
   </joint>  
     
-  <!--Link (left_wheel)-->
-  <link name="left_wheel">    
+  <!--Link (right_wheel)-->
+  <link name="right_wheel">    
     <inertial>
       <origin xyz="0 0 0" rpy="0 1.5707 1.5707" />
       <mass value="5"/>
@@ -107,25 +107,25 @@
       />
     </inertial>
     
-    <collision name="left_wheel_collision">
+    <collision name="right_wheel_collision">
       <origin xyz="0 0 0" rpy="0 1.5707 1.5707"/>
       <geometry>
         <cylinder length="0.05" radius="0.1"/>
       </geometry>
     </collision>
     
-    <visual name="left_wheel_visual">
-      <origin rpy="0 1.5707 1.5707" xyz="0 0 0"/>
+    <visual name="right_wheel_visual">
+      <origin xyz="0 0 0" rpy="0 1.5707 1.5707"/>
       <geometry>
         <cylinder length="0.05" radius="0.1"/>
       </geometry>      
     </visual>  
   </link>
     
-  <!--Joint (left_wheel_hinge)-->
-  <joint name="left_wheel_hinge" type="continuous">
+  <!--Joint (right_wheel_hinge)-->
+  <joint name="right_wheel_hinge" type="continuous">
     <origin xyz="-0.05 -0.15 0" rpy="0 0 0"/>
-    <child link="left_wheel" />
+    <child link="right_wheel" />
     <parent link="chassis"/>
     <axis rpy="0 0 0" xyz="0 1 0"/>
     <limit effort="10000" velocity="1000"/>

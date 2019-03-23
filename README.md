@@ -63,4 +63,5 @@ Now place the white ball at different positions in front of the robot and see if
 1. [The inertia matrix explained](http://answers.gazebosim.org/question/4372/the-inertia-matrix-explained/): GAZEBO ANSWERS  
 2. [[ROS Projects] – Exploring ROS using a 2 Wheeled Robot](http://www.theconstructsim.com/ros-projects-exploring-ros-using-2-wheeled-robot-part-1/): The Construct  
 3. [uos_tools/uos_common_urdf/common.xacro](https://github.com/uos/uos_tools/blob/fuerte/uos_common_urdf/common.xacro): GitHub
+4. [List of moments of inertia](https://en.wikipedia.org/wiki/List_of_moments_of_inertia#List_of_3D_inertia_tensors): Wikipedia
   

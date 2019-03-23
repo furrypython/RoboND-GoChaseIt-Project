@@ -62,6 +62,5 @@ Now place the white ball at different positions in front of the robot and see if
 ## References  
 1. [The inertia matrix explained](http://answers.gazebosim.org/question/4372/the-inertia-matrix-explained/): GAZEBO ANSWERS  
 2. [[ROS Projects] – Exploring ROS using a 2 Wheeled Robot](http://www.theconstructsim.com/ros-projects-exploring-ros-using-2-wheeled-robot-part-1/): The Construct  
-3. [移動型ロボットのURDF作成](https://gbiggs.github.io/rosjp_urdf_tutorial_text/mobile_robot_urdf.html): ロボットモデリング講習会
-
+3. [uos_tools/uos_common_urdf/common.xacro](https://github.com/uos/uos_tools/blob/fuerte/uos_common_urdf/common.xacro): GitHub
   

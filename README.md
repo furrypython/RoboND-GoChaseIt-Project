@@ -13,35 +13,6 @@ contains two C++ ROS nodes (`drive_bot` & `process_image`) to interact with the 
     - `process_image`  
     reads my robot’s camera image, analyzes it to determine the presence and position of a white ball.  
     If a white ball exists in the image, my node requests a service via a client to drive the robot towards it.  
-    
-## Directory Structure  
-```
-    .GoChaseIt                         # Go Chase It Project
-    ├── my_robot                       # my_robot package                   
-    │   ├── launch                     # launch folder for launch files   
-    │   │   ├── robot_description.launch
-    │   │   ├── world.launch
-    │   ├── meshes                     # meshes folder for sensors
-    │   │   ├── hokuyo.dae
-    │   ├── urdf                       # urdf folder for xarco files
-    │   │   ├── my_robot.gazebo
-    │   │   ├── my_robot.xacro
-    │   ├── world                      # world folder for world files
-    │   │   ├── myworld.world
-    │   ├── CMakeLists.txt             # compiler instructions
-    │   ├── package.xml                # package info
-    ├── ball_chaser                    # ball_chaser package                   
-    │   ├── launch                     # launch folder for launch files   
-    │   │   ├── ball_chaser.launch
-    │   ├── src                        # source folder for C++ scripts
-    │   │   ├── drive_bot.cpp
-    │   │   ├── process_images.cpp
-    │   ├── srv                        # service folder for ROS services
-    │   │   ├── DriveToTarget.srv
-    │   ├── CMakeLists.txt             # compiler instructions
-    │   ├── package.xml                # package info                  
-    └──                                                           
-```
  
 ## Step to test `process_image`
 ### Step 1 Launch the robot inside the world 
